@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/styles/style.css"> <!-- Enlace al archivo CSS -->
+</head>
+
+<body>
+    <header>
+        <!-- Incluye el Navbar -->
+        <%- include('partials/navbar') %>
+    </header>
+
+    <main class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="text-center mb-0">Lista de Series</h2>
+            <a href="/create-series" class="btn btn-success">Crear Serie</a>
+        </div>
+        <div class="row">
+            <% series.forEach((serie)=> { %>
+                <div class="col-6 col-md-3">
+                    <div class="card">
+                        <img src="http://localhost:3000<%= serie.imagen %>" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <%= serie.nombre %>
+                            </h5>
+                            <div class="stars">
+                                (<%= serie.rating %> Ranking)
+                            </div>
+                            <p class="card-text">
+                                <span class="badge bg-secondary mx-1">
+                                    <%= serie.genero %>
+                                </span>
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-primary">Ver Ahora</a>
+                                <a href="/eliminar/<%= serie.id %>" class="btn btn-primary">Eliminar</a>
+                                <a href="/editar/<%= serie.id %>" class="btn btn-primary">Editar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+
+</body>
+
+</html>

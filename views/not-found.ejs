@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Página No Encontrada</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .bg {
+            background-image: url('https://kinsta.com/es/wp-content/uploads/sites/8/2023/01/err-file-not-found.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+        }
+        
+        .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            height: 100%;
+        }
+        
+        .content {
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .bg {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="overlay d-flex align-items-center justify-content-center">
+            <div class="content">
+                <h1 class="display-1">404</h1>
+                <p class="lead">Página No Encontrada</p>
+                <a href="/" class="btn btn-danger">Ir al Inicio</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

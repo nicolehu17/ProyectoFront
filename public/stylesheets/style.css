@@ -1,0 +1,113 @@
+:host {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.operation-hours-container {
+  background-color: #a8a8a8; /* Color de fondo actualizado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  background-color: #333;
+}
+
+.container {
+  text-align: center;
+}
+
+.contact-container, .operation-hours-container {
+  background-color: rgba(51, 51, 51, 0.9); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-container h2,
+.contact-container label,
+.contact-container input,
+.contact-container textarea,
+.operation-hours-container h3,
+.operation-hours-container ul {
+  color: #ffffff;
+}
+
+.form-control {
+  background-color: #222;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+.btn-danger {
+  background-color: #e50914;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #d40813;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+
+.card {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.card .btn-danger {
+  background-color: #e50914;
+  border: none;
+}
+
+.card .btn-danger:hover {
+  background-color: #d40813;
+}
+
+.list-group-item {
+  background-color: #444;
+  color: #ffffff;
+  border: none;
+}
+
+h2, h3, p {
+  color: #ffffff;
+}
+
+.contact-title,
+.contact-subtitle {
+  color:  #444;
+}
+
+.contact-info {
+  color:  #444;
+}
+
+.operation-hours-container ul {
+  margin: auto;
+}
